@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "acc-test-bc32c": {
+      "hosting": {
+        "ACC": [
+          "acc-test-bc32c"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "acc-test-bc32c"
+  }
+}
