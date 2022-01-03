@@ -5,3 +5,28 @@
 input {
     border-radius: 5px;
 }
+
+/* ::ng-deep mat-form-field-flex {
+    width: 10px;
+    background-color: #000;
+    color: red;
+} */
+
+.example-form {
+    min-width: 150px;
+    max-width: 500px;
+    width: 100%;
+}
+
+.example-full-width {
+    width: 100%;
+}
+
+.efw1 input {
+    margin-top: -1em;
+    padding: 0;
+}
+
+.example-form:hover .efw2 mat-datepicker-toggle{
+    color: red;
+}

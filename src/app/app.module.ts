@@ -1,6 +1,6 @@
 import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { RouterModule, Routes } from '@angular/router';
 
@@ -23,9 +23,11 @@ import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
 
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import {MatDatepickerModule} from '@angular/material/datepicker';
-import {MatInputModule} from '@angular/material/input';
+import { MatDatepickerModule } from '@angular/material/datepicker';
+import { MatInputModule } from '@angular/material/input';
 import { MatNativeDateModule } from '@angular/material/core';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatMomentDateModule } from "@angular/material-moment-adapter";
 
 const appRoutes: Routes = [
   { path: '', component: TasksComponent },
@@ -48,6 +50,9 @@ const appRoutes: Routes = [
     MatDatepickerModule,
     MatInputModule,
     MatNativeDateModule,
+    MatFormFieldModule,
+    MatMomentDateModule,
+    ReactiveFormsModule
   ],
   declarations: [
     AppComponent,
